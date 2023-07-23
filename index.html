@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie List App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Movie List App</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search movies...">
+      <button onclick="searchMovies()">Search</button>
+    </div>
+    <div id="movieList"></div>
+    <div class="pagination">
+      <button style="color: rgba(2, 0, 138, 0.862);" onclick="prevPage()">Previous</button>
+      <span id="currentPage">1</span>
+      <button style="color: rgba(2, 0, 138, 0.862);" onclick="nextPage()">Next</button>
+    </div>
+  </div>
+  <div id="movieDetailsModal" class="modal"></div>
+  <script src="app.js"></script>
+</body>
+</html>
